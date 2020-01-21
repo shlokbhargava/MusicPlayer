@@ -1,0 +1,171 @@
+/* body */
+body{
+    /* background-image: linear-gradient(90deg, #2857a4 0%, #403066 84%); */
+    background-color: rgb(1, 1, 48);
+}
+
+/* h3 headings */
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-weight: initial;
+}
+
+/* styles for button */
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 0.7rem;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    color: white;
+}
+
+/* displaying aside and article in inline */
+article{
+	display: inline-block;
+	width: 69%;
+}
+
+aside{
+	display: inline-block;
+	width: 5%;
+	vertical-align: top;
+	margin: 30px;
+}
+
+/* input tag background */
+input{
+    background-color: transparent;
+    border: 0.1rem solid white;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+/* navigation area */
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* main songs flex */
+/* .songs-display{
+    flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: center;
+} */
+
+
+/* #main-menu img{
+    height: auto;
+	width: auto;
+	max-width: 20vw;
+	max-height: 30vh;
+    margin-left: 40px;
+    padding: 60px 1px;
+	margin-bottom: 20px;
+} */
+
+#latest-release{
+    padding-left: 80px;
+}
+
+#latest-release img{
+    height: auto;
+    width: auto;
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+/* login modal */
+#modal{
+    visibility: hidden;
+}
+
+#modal:target{
+    visibility: visible;
+    height: 150px;
+    width: 210px;
+    background-color: floralwhite;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#btn{
+    height: 30px;
+    width: 150px;
+    background-color: skyblue;
+    color: black;
+    font-size: 0.8rem;
+}
+
+/* Carousel */
+@keyframes carousel{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400;;
+    }
+}
+
+#carousel figure{
+    position: relative;
+    width: 120%;
+    animation: carousel 20s infinite;
+}
+
+#carousel figure img{
+    width: 20%;
+    float: left;
+}
+
+/* Slider */
+/* #slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    animation: slider 10s infinite;
+} */
+
+/* user_image */
+#user-image{
+    height: 5vh;
+    width: 3vw;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+#right-align{
+    display: inline-block;
+    float: right;
+}
+
