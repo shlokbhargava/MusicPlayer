@@ -61,8 +61,11 @@ input{
     color: white;
 }
 
-.container img{
+.container{
     position: relative;
+}
+
+.container img{
     height: auto;
 	width: auto;
 	max-width: 20vw;
@@ -72,16 +75,18 @@ input{
     transition: transform .2s;
 }
 
-.container img:hover{ 
+.container:hover .overlay{ 
     transform: scale(1.2);
     opacity: 0.6;
+    visibility: visible;
 }
 
 .overlay{
+    position: absolute;
     display: inline-block;
     font-size: 4rem;
     color: grey;
-    visibility: visible;
+    visibility: hidden;
     transition: opacity .35s ease;
 }
 
