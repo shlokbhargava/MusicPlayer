@@ -9,6 +9,7 @@ h3{
     color: white;
     font-family: sans-serif;
     font-weight: initial;
+    display: inline;
 }
 
 /* styles for button */
@@ -25,14 +26,22 @@ button{
 /* displaying aside and article in inline */
 article{
 	display: inline-block;
-	width: 69%;
+    width: 60%;
+    float: left;
 }
 
+/* aside-section */
 aside{
-	display: inline-block;
-	width: 5%;
-	vertical-align: top;
-	margin: 30px;
+    display: inline-block;
+    width: 30%;
+    float: right;
+    margin: -50px;
+    margin-right: 2px;
+}
+
+#drop-down{
+    color: white;
+    float: right;
 }
 
 /* input tag background */
@@ -52,23 +61,29 @@ input{
     color: white;
 }
 
-/* main songs flex */
-/* .songs-display{
-    flex-wrap: wrap;
-	flex-direction: row;
-    justify-content: center;
-} */
-
-
-/* #main-menu img{
+.container img{
+    position: relative;
     height: auto;
 	width: auto;
 	max-width: 20vw;
-	max-height: 30vh;
-    margin-left: 40px;
-    padding: 60px 1px;
-	margin-bottom: 20px;
-} */
+    max-height: 28vh;
+    padding-left: 30px;
+    padding-top: 50px;
+    transition: transform .2s;
+}
+
+.container img:hover{ 
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+
+.overlay{
+    display: inline-block;
+    font-size: 4rem;
+    color: grey;
+    visibility: visible;
+    transition: opacity .35s ease;
+}
 
 #latest-release{
     padding-left: 80px;
@@ -102,58 +117,6 @@ input{
     color: black;
     font-size: 0.8rem;
 }
-
-/* Carousel */
-@keyframes carousel{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left: -300%;
-    }
-    100%{
-        left: -400;;
-    }
-}
-
-#carousel figure{
-    position: relative;
-    width: 120%;
-    animation: carousel 20s infinite;
-}
-
-#carousel figure img{
-    width: 20%;
-    float: left;
-}
-
-/* Slider */
-/* #slider{
-    overflow: hidden;
-}
-
-#slider figure{
-    position: relative;
-    animation: slider 10s infinite;
-} */
 
 /* user_image */
 #user-image{
