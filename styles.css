@@ -35,8 +35,10 @@ aside{
     display: inline-block;
     width: 30%;
     float: right;
-    margin: -50px;
-    margin-right: 2px;
+    margin: 110px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     position: fixed;
 }
 
@@ -73,6 +75,9 @@ input{
 .nav a{
     text-decoration: none;
     color: white;
+}
+
+.nav{
 }
 
 .container{
@@ -236,10 +241,20 @@ input{
 .popular-artists img{
     height: auto;
     width: auto;
-    max-height: 14vh;
-    max-width: 12vw;
-    border-radius: 48%;
-    padding: 10px;
+    max-height: 12vh;
+    max-width: 10vw;
+    border-radius: 53%;
+    padding: -50px;
+}
+
+.popular-artists figure{
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Comic Sans MS;
+    line-height: 0;
+    margin-left: -20px;
+    font-size: 0.8rem;
 }
 
 /* user_image */
@@ -256,3 +271,71 @@ input{
     float: right;
 }
 
+#genre{
+    height: 15vh;
+    width: 60vw;
+    background-color: rgb(1, 1, 58);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.genre-list{
+    position: relative;
+}
+
+#genre img{
+    padding-top: 7px;
+    height: 13vh;
+    width: 6.5vw;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.centered{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#music-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.music-image{   
+    height: 20vh;
+    width: 18vw;
+    padding: 12px;
+    opacity: 0.5;
+    filter: contrast(50%);
+    filter: brightness(50%);
+}
+
+.options{
+    position: relative;
+}
+
+.center-text{
+    position: absolute;
+    top: 45%;
+    left: 36%;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#latest-english{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#latest-english img{
+    height: 14vh;
+    width: 8vw;
+}
