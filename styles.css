@@ -37,15 +37,35 @@ aside{
     float: right;
     margin: 110px;
     margin-top: 30px;
+    position: fixed;
+    overflow: scroll;
+}
+
+#scroll{
     overflow-y: scroll;
     scroll-behavior: smooth;
-    position: fixed;
 }
 
 .queue-images{
     height: 5.5vh;
     width: 3vw;
     box-shadow: 0px 0px 4px 2px rgb(110, 235, 235);
+}
+
+.display-text{
+    margin-left: 2%;
+    text-align: justify;
+    display: inline-block;
+    line-height: 0.3rem;
+}
+
+.like-button{
+    float: right;
+    cursor: pointer;
+}
+
+.like-button:hover{
+    color: red;
 }
 
 aside li{
@@ -78,6 +98,16 @@ input{
 }
 
 .nav{
+    width: 100%;
+    height: 9vh;
+    top: 0;
+    background-color: rgb(1, 1, 58);
+    position: fixed;
+    z-index: 3;
+}
+
+.nav-details{
+    padding-top: 5px;
 }
 
 .container{
@@ -135,19 +165,33 @@ input{
     justify-content: space-around;
 }
 
-#latest-release img{
+.images{
     height: auto;
     width: auto;
     max-width: 10vw;
     max-height: 10vh;
 }
 
+.play-pause{
+    position: relative;
+    cursor: pointer;
+}
+
+.play-pause:hover .play-btn{
+    opacity: 0.6;
+    visibility: visible;
+}
+
+.images:hover{
+    opacity: 0.6;
+}
+
 .play-btn{
+    visibility: hidden;
+    position: absolute;
     color: white;
-    top: 0;
-	bottom: 0;
-	left: 0;
-    right: 0;
+    top: 37%;
+	left: 40%;
 }
 
 .songs-details{
@@ -261,6 +305,7 @@ input{
 #user-image{
     height: 5vh;
     width: 3vw;
+    padding: 8px;
     border-radius: 50%;
     float: right;
     cursor: pointer;
@@ -269,6 +314,7 @@ input{
 #right-align{
     display: inline-block;
     float: right;
+    position: relative;
 }
 
 #genre{
@@ -307,7 +353,7 @@ input{
     flex-wrap: wrap;
 }
 
-.music-image{   
+.music-image{  
     height: 20vh;
     width: 18vw;
     padding: 12px;
@@ -328,14 +374,67 @@ input{
     font-size: 1.3rem;
 }
 
-#latest-english{
+.latest-english{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#latest-english img{
+.latest-english img{
     height: 14vh;
     width: 8vw;
+    padding-bottom: 10px;
+}
+
+.items{
+    position: relative;
+}
+
+.text-align{
+    position: absolute;
+    line-height: 0.3rem;
+}
+
+#player-controls{
+    visibility: hidden;
+}
+
+#player-controls:target{
+    visibility: visible;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    vertical-align: bottom;
+    bottom: 0;
+    z-index: 3;
+    position: fixed;
+}
+
+#player-controls img{
+    height: 8vh;
+    width: 5vw;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.info-display{
+    position: relative;
+    top: -20%;
+    left: 1%;
+    display: inline-block;
+    line-height: 0.2rem;
+}
+
+.subscribe{
+    position: absolute;
+    left: 120%;
+    bottom: 50%;
+}
+
+.player-buttons{
+    color: white;
+    bottom: 60%;
+    position: relative;
+    cursor: pointer;
 }

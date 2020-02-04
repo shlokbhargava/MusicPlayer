@@ -12,9 +12,11 @@
 <body>
     <header>
         <div class="nav">
-            <a href="#">
-                <i class="fas fa-headphones fa-lg">&nbsp;Music Studio</i>
-            </a>
+            <div class="nav-details">
+              <a href="#">
+                <i style="color: aqua; font-size: 2rem; " class="fas fa-headphones fa-lg">&nbsp;Music Studio</i>
+              </a>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
             <a href="#">Favourites</a>
             <div id="right-align">
                 <button type="submit">
@@ -44,6 +46,7 @@
                     </button>
                 </div>
             </div>
+          </div>
         </div>
     </header>
 
@@ -72,8 +75,12 @@
             <div>
                 <h3 style="padding-left: 30px;">Latest Release</h3>
                 <div id="latest-release">
-                     <img src="images/song_img.jpg" alt="song">
-                     <i class="fas fa-play fa-lg play-btn"></i>
+                     <div class="play-pause">
+                      <img class="images" src="images/song_img.jpg" alt="song">
+                      <a href="#player-controls">
+                        <i class="fas fa-play fa-lg play-btn"></i>
+                      </a>
+                     </div>
                      <div class="songs-details">
                         <p class="song-name">Takeaway</p>
                         <p class="song-date">Jul 24,2019</p>
@@ -92,12 +99,16 @@
                           </a>
                         </div>
                       </div>
-                     <img class="alt-image" src="images/song_img.jpg" alt="song">
-                     <i class="fas fa-play fa-lg play-btn"></i>
-                     <div class="songs-details">
-                        <p class="song-name">Takeaway</p>
-                        <p class="song-date">Jul 24,2019</p>
-                     </div>
+                      <div class="play-pause">
+                        <img class="images" src="images/song_img.jpg" alt="song">
+                        <a href="#player-controls">
+                          <i class="fas fa-play fa-lg play-btn"></i>
+                        </a>
+                       </div>
+                       <div class="songs-details">
+                          <p class="song-name">Takeaway</p>
+                          <p class="song-date">Jul 24,2019</p>
+                       </div>
                      <div class="dropdown">
                         <i class="fas fa-ellipsis-h menu"></i>
                         <div class="dropdown-content">
@@ -112,12 +123,16 @@
                           </a>
                         </div>
                       </div>
-                     <img src="images/song_img.jpg" alt="song">
-                     <i class="fas fa-play fa-lg play-btn"></i>
-                     <div class="songs-details">
-                        <p class="song-name">Takeaway</p>
-                        <p class="song-date">Jul 24,2019</p>
-                     </div>
+                      <div class="play-pause">
+                        <img class="images" src="images/song_img.jpg" alt="song">
+                        <a href="#player-controls">
+                          <i class="fas fa-play fa-lg play-btn"></i>
+                        </a>
+                       </div>
+                       <div class="songs-details">
+                          <p class="song-name">Takeaway</p>
+                          <p class="song-date">Jul 24,2019</p>
+                       </div>
                      <div class="dropdown">
                         <i class="fas fa-ellipsis-h menu"></i>
                         <div class="dropdown-content">
@@ -132,12 +147,16 @@
                           </a>
                         </div>
                       </div>
-                     <img class="alt-image" src="images/song_img.jpg" alt="song">
-                     <i class="fas fa-play fa-lg play-btn"></i>
-                     <div class="songs-details">
-                        <p class="song-name">Takeaway</p>
-                        <p class="song-date">Jul 24,2019</p>
-                     </div>
+                      <div class="play-pause">
+                        <img class="images" src="images/song_img.jpg" alt="song">
+                        <a href="#player-controls">
+                          <i class="fas fa-play fa-lg play-btn"></i>
+                        </a>
+                       </div>
+                       <div class="songs-details">
+                          <p class="song-name">Takeaway</p>
+                          <p class="song-date">Jul 24,2019</p>
+                       </div>
                      <div class="dropdown">
                         <i class="fas fa-ellipsis-h menu"></i>
                         <div class="dropdown-content">
@@ -249,7 +268,57 @@
             <h3 style="padding-left: 30px;">Latest English</h3>
             <br>
             <br>
-            <div id="latest-english">
+            <div class="latest-english">
+              <div class="items">
+                <img src="images/mirage.jpg" alt="mirage">
+                <div class="text-align">
+                <p class="song-name">Mirage</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+              <div class="items">
+                <img src="images/worryBoutUs.jpg" alt="worryBoutUs">
+                <div class="text-align">
+                <p class="song-name">Onism</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+              <div class="items"> 
+                <img src="images/unity.jpeg" alt="unity">
+                <div class="text-align">
+                <p class="song-name">Unity</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+              <div class="items">
+                <img src="images/shapeOfYou.jpg" alt="shapeOfYou">
+                <div class="text-align"> 
+                <p class="song-name">Shape Of You</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+              <div class="items">
+                <img src="images/song_img.jpg" alt="takeaway">
+                <div class="text-align">
+                <p class="song-name">Takeaway</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+              <div class="items">
+                <img src="images/mirage.jpg" alt="mirage">
+                <div class="text-align">
+                <p class="song-name">Mirage</p>
+                <p class="song-date">Jul 24,2019</p>
+              </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3 style="padding-left: 30px;">Latest Hindi</h3>
+            <br>
+            <br>
+            <div class="latest-english">
               <img src="images/mirage.jpg" alt="mirage">
               <img src="images/worryBoutUs.jpg" alt="worryBoutUs">
               <img src="images/unity.jpeg" alt="unity">
@@ -258,7 +327,7 @@
               <img src="images/mirage.jpg" alt="mirage">
             </div>
         </article>
-        <aside>
+        <aside id="scroll">
             <h3>Queue</h3>
             <a href="#">
                 <div style="display: inline;" class="dropdown">
@@ -276,48 +345,125 @@
             <ul>
               <li>
                 <img class="queue-images" src="images/mirage.jpg" alt="mirage">
+                <div class="display-text">
+                  <p class="song-name">Mirage</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/worryBoutUs.jpg" alt="worry Bout us">
+                <div class="display-text">
+                  <p class="song-name">Onism</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/unity.jpeg" alt="unity">
+                <div class="display-text">
+                  <p class="song-name">Unity</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/shapeOfYou.jpg" alt="shapeOfYou">
+                <div class="display-text">
+                  <p class="song-name">Shape Of You</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/mirage.jpg" alt="mirage">
+                <div class="display-text">
+                  <p class="song-name">Mirage</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/worryBoutUs.jpg" alt="worry Bout us">
+                <div class="display-text">
+                  <p class="song-name">Onism</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/unity.jpeg" alt="unity">
+                <div class="display-text">
+                  <p class="song-name">Unity</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/shapeOfYou.jpg" alt="shapeOfYou">
+                <div class="display-text">
+                  <p class="song-name">Shape Of You</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/mirage.jpg" alt="mirage">
+                <div class="display-text">
+                  <p class="song-name">Mirage</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/worryBoutUs.jpg" alt="worry Bout us">
+                <div class="display-text">
+                  <p class="song-name">Onism</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/unity.jpeg" alt="unity">
+                <div class="display-text">
+                  <p class="song-name">Unity</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
               <li>
                 <img class="queue-images" src="images/shapeOfYou.jpg" alt="shapeOfYou">
+                <div class="display-text">
+                  <p class="song-name">Shape Of You</p>
+                  <p class="song-date">Jul 24,2019</p>
+               </div>
+               <i class="far fa-heart like-button"></i>
               </li>
             </ul>
-        </aside>
+          </aside>
     </main>
-
     <footer>
-
+      <div id="player-controls">
+          <img src="images/song_img.jpg" alt="Takeaway">
+          <div class="info-display">
+            <p class="song-name">Takeaway</p>
+            <p class="song-date">Chainsmokers</p>
+            <div class="subscribe">
+              <i style="color: white;" class="far fa-heart"></i>
+            </div>
+          </div>
+          <i style= "left: 30%;" class="fas fa-random player-buttons "></i>
+          <i style= "left: 32%;" class="fas fa-step-backward player-buttons "></i>
+          <i style= "left: 35%;" class="far fa-pause-circle fa-lg player-buttons "></i>
+          <i style= "left: 38%;" class="fas fa-step-forward player-buttons "></i>
+          <i style= "left: 40%;" class="fas fa-sync-alt player-buttons "></i>
+          <i style="color: white; left: 70%; cursor: pointer; position: relative; bottom: 37%; " class="fas fa-volume-up"></i>
+          <i style="color: white; left: 71%; cursor: pointer; position: relative; bottom: 37%; " class="fas fa-volume-off"></i>
+          <i style="color: white; left: 72%; cursor: pointer; position: relative; bottom: 37%; " class="fas fa-volume-mute"></i>
+          <i style="color: white; left: 75%; cursor: pointer; position: relative; bottom: 37%; " class="fas fa-compress-alt"></i>
+          <a style=" left: 75%; position: relative; bottom: 75%; cursor: pointer; color: white;" href="#">X</a>
+      </div>
     </footer>
-    
 </body>
 
 </html>
