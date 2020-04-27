@@ -1,0 +1,440 @@
+/* body */
+body{
+    /* background-image: linear-gradient(90deg, #2857a4 0%, #403066 84%); */
+    background-color: rgb(1, 1, 48);
+}
+
+/* h3 headings */
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-weight: initial;
+    display: inline;
+}
+
+/* styles for button */
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 0.7rem;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    color: white;
+}
+
+/* displaying aside and article in inline */
+article{
+	display: inline-block;
+    width: 60%;
+    float: left;
+}
+
+/* aside-section */
+aside{
+    display: inline-block;
+    width: 30%;
+    float: right;
+    margin: 110px;
+    margin-top: 30px;
+    position: fixed;
+    overflow: scroll;
+}
+
+#scroll{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.queue-images{
+    height: 5.5vh;
+    width: 3vw;
+    box-shadow: 0px 0px 4px 2px rgb(110, 235, 235);
+}
+
+.display-text{
+    margin-left: 2%;
+    text-align: justify;
+    display: inline-block;
+    line-height: 0.3rem;
+}
+
+.like-button{
+    float: right;
+    cursor: pointer;
+}
+
+.like-button:hover{
+    color: red;
+}
+
+aside li{
+    color: white;
+    list-style: none;
+    margin-left: -35px;
+    margin-bottom: 15px;
+}
+
+#drop-down{
+    color: white;
+    float: right;
+}
+
+/* input tag background */
+input{
+    background-color: transparent;
+    border: 0.1rem solid white;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+/* navigation area */
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    width: 100%;
+    height: 9vh;
+    top: 0;
+    background-color: rgb(1, 1, 58);
+    position: fixed;
+    z-index: 3;
+}
+
+.nav-details{
+    padding-top: 5px;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+}
+
+.container img{
+    height: auto;
+	width: auto;
+	max-width: 20vw;
+    max-height: 28vh;
+    padding-left: 30px;
+    padding-top: 50px;
+    transition: transform .2s;
+}
+
+.container img:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.container:hover .overlay{ 
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+    width: auto;
+    max-width: 20vw;
+    max-height: 28vh;
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-left: 30%;
+    margin-top: 32%;
+    font-size: 4rem;
+    color: rgb(20, 20, 20);
+    visibility: hidden;
+    transition: opacity .35s ease;
+}
+
+/* latest release section */
+#latest-release{
+    padding-left: 30px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images{
+    height: auto;
+    width: auto;
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+.play-pause{
+    position: relative;
+    cursor: pointer;
+}
+
+.play-pause:hover .play-btn{
+    opacity: 0.6;
+    visibility: visible;
+}
+
+.images:hover{
+    opacity: 0.6;
+}
+
+.play-btn{
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    top: 37%;
+	left: 40%;
+}
+
+.songs-details{
+    position: relative;
+    display: inline;
+    padding: 2%;
+}
+.song-name{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 0.2em;
+    display: inline;
+}
+
+.song-date{
+    font-size: 0.8rem;
+    color: white; 
+    font-weight: lighter;   
+}
+
+.menu{
+    color: white;
+    float: right;
+    margin-left: 177px;
+    cursor: pointer;
+}
+
+.alt-image{
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 0.8rem;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 3px 11px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.icon{
+    color: black;
+}
+
+/* login modal */
+#modal{
+    visibility: hidden;
+}
+
+#modal:target{
+    visibility: visible;
+    height: 150px;
+    width: 210px;
+    background-color: floralwhite;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#btn{
+    height: 30px;
+    width: 150px;
+    background-color: skyblue;
+    color: black;
+    font-size: 0.8rem;
+}
+
+/* popluar artists */
+.popular-artists{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 40px;
+}
+
+.popular-artists img{
+    height: auto;
+    width: auto;
+    max-height: 12vh;
+    max-width: 10vw;
+    border-radius: 53%;
+    padding: -50px;
+}
+
+.popular-artists figure{
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Comic Sans MS;
+    line-height: 0;
+    margin-left: -20px;
+    font-size: 0.8rem;
+}
+
+/* user_image */
+#user-image{
+    height: 5vh;
+    width: 3vw;
+    padding: 8px;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+#right-align{
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+#genre{
+    height: 15vh;
+    width: 60vw;
+    background-color: rgb(1, 1, 58);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.genre-list{
+    position: relative;
+}
+
+#genre img{
+    padding-top: 7px;
+    height: 13vh;
+    width: 6.5vw;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.centered{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#music-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.music-image{  
+    height: 20vh;
+    width: 18vw;
+    padding: 12px;
+    opacity: 0.5;
+    filter: contrast(50%);
+    filter: brightness(50%);
+}
+
+.options{
+    position: relative;
+}
+
+.center-text{
+    position: absolute;
+    top: 45%;
+    left: 36%;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.latest-english{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.latest-english img{
+    height: 14vh;
+    width: 8vw;
+    padding-bottom: 10px;
+}
+
+.items{
+    position: relative;
+}
+
+.text-align{
+    position: absolute;
+    line-height: 0.3rem;
+}
+
+#player-controls{
+    visibility: hidden;
+}
+
+#player-controls:target{
+    visibility: visible;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    vertical-align: bottom;
+    bottom: 0;
+    z-index: 3;
+    position: fixed;
+}
+
+#player-controls img{
+    height: 8vh;
+    width: 5vw;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.info-display{
+    position: relative;
+    top: -20%;
+    left: 1%;
+    display: inline-block;
+    line-height: 0.2rem;
+}
+
+.subscribe{
+    position: absolute;
+    left: 120%;
+    bottom: 50%;
+}
+
+.player-buttons{
+    color: white;
+    bottom: 60%;
+    position: relative;
+    cursor: pointer;
+}
