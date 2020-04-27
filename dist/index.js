@@ -5,17 +5,23 @@ const fs = require('fs');
 function requestHandler(request, response){
     console.log(request.url);
 
-    response.writeHead(200, {'content-type' : 'text/html'});
+    
 
     let filePath;
 
     switch(request.url){
         case '/':
-            filePath = './home.html'
+            response.writeHead(200, {'content-type' : 'text/html'});
+            filePath = './index.html'
             break;
         case '/home':
-            filePath = './home.html'
-            break;
+            response.writeHead(200, {'content-type' : 'text/html'});
+            filePath = './index.html'
+            break;   
+        case '/styles.css':
+            response.writeHead(200, {'content-type' : 'text/css'});
+            filePath = './styles.css'
+            break;     
             
             
         default: 
